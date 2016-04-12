@@ -3,7 +3,7 @@ vendor
 composer.lock
 templates/jeuropeana/build.properties
 build.properties
-bootstrapbase.css
-bootstrapbase.min.js
+knowledgearchive.css
+knowledgearchive.min.js
 scss.inc.php
 vendor

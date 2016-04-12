@@ -22,17 +22,17 @@ Run phing help for all available targets.
 
 - Download latest Source Code zip from http://getbootstrap.com/getting-started/,
 
-- Extract dist/fonts to templates/bootstrapbase/fonts
+- Extract dist/fonts to templates/knowledgearchive/fonts
 
 - Extract dist/js/bootstrap*.js to templates/bootstrap/js/jui
 
-- Extract less/* to templates/bootstrapbase/less/bootstrap
+- Extract less/* to templates/knowledgearchive/less/bootstrap
 
 For Sass:
 
 - Download latest Sass tar archive from from http://getbootstrap.com/getting-started/,
 
-- Extract /bootstrap-sass-3.3.6/assets/stylesheets/ to templates/bootstrapbase/scss
+- Extract /bootstrap-sass-3.3.6/assets/stylesheets/ to templates/knowledgearchive/scss
 
 ## Upgrading JQuery
 

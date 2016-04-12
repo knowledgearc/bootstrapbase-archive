@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project name="Template - BootstrapBase" default="">
+<project name="Template - KnowledgeArchive" default="">
     <property file="build.properties"/>
     <property name="path.build" value="${src}/build"/>
 
     <target name="deploy" description="Deploy template code to a pre-existing Joomla site.">
-        <delete dir="${path.joomla}/templates/bootstrapbase" includeemptydirs="true" failonerror="true"/>
+        <delete dir="${path.joomla}/templates/knowledgearchive" includeemptydirs="true" failonerror="true"/>
 
-        <copy todir="${path.joomla}/templates/bootstrapbase">
-            <fileset dir="${src}/templates/bootstrapbase" defaultexcludes="false">
+        <copy todir="${path.joomla}/templates/knowledgearchive">
+            <fileset dir="${src}/templates/knowledgearchive" defaultexcludes="false">
                 <exclude name="language"/>
             </fileset>
         </copy>
 
         <copy todir="${path.joomla}">
-            <fileset dir="${src}/templates/bootstrapbase" defaultexcludes="true">
+            <fileset dir="${src}/templates/knowledgearchive" defaultexcludes="true">
                 <include name="language/**"/>
             </fileset>
         </copy>
 
         <phingcall target="prepare_less_parser"/>
 
-        <copy todir="${path.joomla}/templates/bootstrapbase/libraries/">
+        <copy todir="${path.joomla}/templates/knowledgearchive/libraries/">
             <fileset dir="${path.build}/libraries" defaultexcludes="true">
                 <include name="vendor/**"/>
             </fileset>
@@ -37,7 +37,7 @@
         <phingcall target="prepare_less_parser"/>
 
         <copy todir="${path.build}" overwrite="true">
-            <fileset dir="./templates/bootstrapbase" defaultexcludes="false">
+            <fileset dir="./templates/knowledgearchive" defaultexcludes="false">
                 <exclude name="build/**"/>
                 <exclude name="build*.xml"/>
                 <exclude name="build.properties*"/>
@@ -46,7 +46,7 @@
 
         <foreach list="${overrides.exclude}" param="exclude" target="remove_override"/>
 
-        <zip destfile="${path.build}/tpl_bootstrapbase.zip" basedir="${path.build}"/>
+        <zip destfile="${path.build}/tpl_knowledgearchive.zip" basedir="${path.build}"/>
 
         <delete includeemptydirs="true">
             <fileset dir="${path.build}" includes="**/*">

@@ -1,5 +1,5 @@
 {
-    "name": "knowledgearc/bootstrapbase",
+    "name": "knowledgearc/knowledgearchive",
     "description": "BootstrapBase provides a Bootstrap-enabled Joomla! template.",
     "type": "template",
     "keywords": ["template", "plugin", "bootstrap", "less", "css", "javascript"],
@@ -20,7 +20,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/knowledgearc/bootstrapbase"
+            "url": "https://github.com/knowledgearc/knowledgearchive"
         }
     ]
 }

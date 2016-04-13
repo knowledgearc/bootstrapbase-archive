@@ -7,3 +7,5 @@ knowledgearchive.css
 knowledgearchive.min.js
 scss.inc.php
 vendor
+node_modules
+build

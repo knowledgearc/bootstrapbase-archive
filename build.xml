@@ -4,7 +4,7 @@
     <property name="path.build" value="${src}/build"/>
 
     <target name="deploy" description="Deploy template code to a pre-existing Joomla site.">
-        <delete dir="${path.joomla}/templates/knowledgearchive" includeemptydirs="true" failonerror="true"/>
+        <delete dir="${path.joomla}/templates/knowledgearchive/" includeemptydirs="true" failonerror="true"/>
 
         <copy todir="${path.joomla}/templates/knowledgearchive">
             <fileset dir="${src}/templates/knowledgearchive" defaultexcludes="false">

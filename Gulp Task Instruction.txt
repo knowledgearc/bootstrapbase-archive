@@ -1,0 +1,13 @@
+Gulp Task Instruction
+=========================================
+1. Install node.js https://nodejs.org/en/
+2. Install gulp - follow the instruction in https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+3. Make sure you have package.json and gulpfile.js in same directory (same level)
+4. run command- npm install (run command in the directory where package.json and gulpfile.js is saved)
+******Now everything should be all set and ready to run the task*********
+
+1. To delete the folder run - gulp clean:templates (it deletes the destination folder. check line number 8 in gulpfile.js)
+
+2. To copy the folder run - gulp copy (check line number 22 for source folder and line number 24 for the destination folder. Note: every time when you run copy task, gulp will automatically perfom delete i.e. clean:templates task before copying)
+
+3. To run the copy task automatically when you change the file in source, run the command - gulp watch

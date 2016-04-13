@@ -1,0 +1,16 @@
+{
+  "name": "knowledgearchive",
+  "version": "1.0.0",
+  "description": "Gulp Task runner to copy templates to another location. usually joomla development directory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pushpan Kumar G C",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-rm": "^1.0.0"
+  }
+}

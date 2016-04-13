@@ -1,1 +1,27 @@
 @import "normalize";
+
+h1 {
+    font-size: 24px;
+}
+
+#jcarCategory {
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        
+        a {
+            color: #364149;
+            
+            &:hover {
+                color: #008cff;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    & > header{
+        background: #B7C2CA;
+        padding: 1px 15px 17px;
+        font-style: italic
+    }
+}

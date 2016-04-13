@@ -1,0 +1,25 @@
+.navbar {
+    background: #364149;
+    border-radius: 0;
+    
+    .nav > li > a {
+    color: #8BA2B3;
+   
+    
+    &:hover, &:focus {
+        background: transparent;
+        color: #D1E1EC;
+    }
+    
+   
+}
+  .nav > li.current.active > a {
+   color: #D1E1EC;
+   background: #2A343C;
+    
+    // &:hover, &:focus {
+    //     background: transparent;
+    //     color: #D1E1EC;
+    // }
+}   
+}

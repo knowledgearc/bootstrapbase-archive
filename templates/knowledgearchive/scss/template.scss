@@ -1,5 +1,7 @@
 // variables,functions,mixins and anything that won't create css in itself will go here
 @import "helpers/helpers";
+//vendors styles like bootstrap, jqueryUi etc
+@import "vendors/vendors";
 // base files like typograhy, headings, links, resets etc
 @import "base/base";
 // buttons, carousels, navigations, thumbnails etc specially for small part of the layout
@@ -8,88 +10,86 @@
 @import "themes/themes";
 //pages sepecific styles
 @import "pages/pages";
-//vendors styles like bootstrap, jqueryUi etc
-@import "vendors/vendors";
 //overrides to the predefined styles..use this file to override the vendores aswell or a specific override file can be created inside the vendor folder to modify vendor styles
 @import "overrides/overrides";
 
 
 //header
-header {
-	@include make-md-column(12);
-	padding: 0;
+// header {
+// 	@include make-md-column(12);
+// 	padding: 0;
 
 	
-	 border-bottom:1px solid #eee;
-	 padding-bottom: 2%;
-}
-.logo {
-	@include make-md-column(6);
-}
+// 	 border-bottom:1px solid #eee;
+// 	 padding-bottom: 2%;
+// }
+// .logo {
+// 	@include make-md-column(6);
+// }
 
-form.search {
-	@include make-md-column(6);
-	text-align: right;
-	float: right;
-	margin-top: 2%;
-}
+// form.search {
+// 	@include make-md-column(6);
+// 	text-align: right;
+// 	float: right;
+// 	margin-top: 2%;
+// }
 
-.main {
-	@include make-md-column(10);
-	// @include make-row;
-}
-.sidebar {
-	@include make-md-column(2);
-}
-.img-featured {
-	display: block;
-	max-height: 175px;
-	width: auto;
-}
+// .main {
+// 	@include make-md-column(10);
+// 	// @include make-row;
+// }
+// .sidebar {
+// 	@include make-md-column(2);
+// }
+// .img-featured {
+// 	display: block;
+// 	max-height: 175px;
+// 	width: auto;
+// }
 
-.tab-content {
-	padding-top: 2%;
+// .tab-content {
+// 	padding-top: 2%;
 
-	a {
-		color:#333333;
-		&:hover {
-			text-decoration: none;
-		}
-	}
+// 	a {
+// 		color:#333333;
+// 		&:hover {
+// 			text-decoration: none;
+// 		}
+// 	}
 
-	.featured-items {
-		padding:1%;
-		border: 1px solid #fff;
-		&:hover {
-			background: #E2E2E2;
-			border: 1px solid #BFBFBF;
-		}	
-	}
-}
+// 	.featured-items {
+// 		padding:1%;
+// 		border: 1px solid #fff;
+// 		&:hover {
+// 			background: #E2E2E2;
+// 			border: 1px solid #BFBFBF;
+// 		}	
+// 	}
+// }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+// .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
 
-    border-top: 3px solid #272727;
-}
+//     border-top: 3px solid #272727;
+// }
 
-.nav-tabs > li > a {
+// .nav-tabs > li > a {
  
-    border-radius: 0;
-}
+//     border-radius: 0;
+// }
 
-.featured-img {
-	@extend .media-left;
-}
+// .featured-img {
+// 	@extend .media-left;
+// }
 
-.item-descriptions {
-	@extend .media-body;
-}
+// .item-descriptions {
+// 	@extend .media-body;
+// }
 
-footer {
+// footer {
 	
-	@extend .container;
-	padding-top: 2%;
-	margin-top: 2%;
-	border-top:1px solid #eee;
+// 	@extend .container;
+// 	padding-top: 2%;
+// 	margin-top: 2%;
+// 	border-top:1px solid #eee;
 	
-}
+// }

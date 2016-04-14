@@ -1,32 +1,34 @@
 .navbar {
-    background: #364149;
     border-radius: 0;
-    
+    background: #364149;
+
     .nav > li > a {
-    color: #8BA2B3;
-    &:hover, &:focus {
-        background: transparent;
-        color: #D1E1EC;
+        color: #8ba2b3;
+        &:hover, &:focus {
+            color: #d1e1ec;
+            background: transparent;
+        }
     }
-}
-  .nav > li.current.active > a {
-   color: #D1E1EC;
-   background: #2A343C;
-}   
+    
+    .nav > li.current.active > a {
+        color: #d1e1ec;
+        background: #2a343c;
+    }
 }
 
 .navbar-toggle {
     border-radius: 0;
-     .icon-bar {
-    border-radius: 0;
-    background: #84929C;
-}
+    .icon-bar {
+        border-radius: 0;
+        background: #84929c;
+    }
 }
 
 button {
     &.jcar-load-more {
+        border-radius: 0;
+
         @extend .btn;
         @extend .btn-default;
-        border-radius:0;
     }
 }

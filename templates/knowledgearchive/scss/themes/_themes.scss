@@ -1,15 +1,15 @@
 section {
-    &#jcarItem
+    &#jcarItem {
         dl {
-            background: #E7E7F9;
             padding: 10px;
-            
+            background: #e7e7f9;
             dd + dt {
                 margin-top: 20px;
             }
-        }
+        } 
+    }   
 }
 
 #content {
-@extend .container;
+    @extend .container;
 }

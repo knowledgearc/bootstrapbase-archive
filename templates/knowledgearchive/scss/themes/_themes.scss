@@ -1,14 +1,15 @@
-section#jcarItem {
+section {
+    #jcarItem
         dl {
-             background: #E7E7F9;
-             padding: 10px;
-             
+            background: #E7E7F9;
+            padding: 10px;
+            
             dd + dt {
-    margin-top: 20px;
-}
+                margin-top: 20px;
+            }
         }
-    }
+}
 
 #content {
-    @extend .container;
+@extend .container;
 }

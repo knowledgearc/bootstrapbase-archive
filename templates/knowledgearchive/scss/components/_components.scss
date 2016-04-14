@@ -22,3 +22,11 @@
     background: #84929C;
 }
 }
+
+button {
+    &.jcar-load-more {
+        @extend .btn;
+        @extend .btn-default;
+        border-radius:0;
+    }
+}

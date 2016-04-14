@@ -14,3 +14,20 @@ body.view-item.dspace-more-items-example {
 #content {
     @extend .container;
 }
+
+
+   
+    section#jcarItem {
+        dl {
+             background: #E7E7F9;
+             padding: 10px;
+             
+            dd + dt {
+    margin-top: 20px;
+}
+        }
+    }
+
+#content {
+    @extend .container;
+}

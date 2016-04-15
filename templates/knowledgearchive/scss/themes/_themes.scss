@@ -10,6 +10,11 @@ section {
     }   
 }
 
+.loader-gif{
+	display: none;
+    background: url('../images/ajax-loader.gif') no-repeat;
+}
+
 #content {
     @extend .container;
 }

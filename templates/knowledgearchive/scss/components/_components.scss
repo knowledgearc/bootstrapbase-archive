@@ -30,5 +30,7 @@ button {
 
         @extend .btn;
         @extend .btn-default;
+        display: inline-block;
+        margin-bottom: 35px;
     }
 }

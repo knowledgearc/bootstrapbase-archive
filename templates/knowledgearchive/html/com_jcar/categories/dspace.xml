@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout
+        title="TPL_KNOWLEDGEARCHIVE_CATEGORIES_VIEW_DSPACE_COMMUNITIES_TITLE"
+        option="TPL_KNOWLEDGEARCHIVE_CATEGORIES_VIEW_DSPACE_COMMUNITIES_OPTION">
+        <message>
+            <![CDATA[TPL_KNOWLEDGEARCHIVE_CATEGORIES_VIEW_DSPACE_COMMUNITIES_DESC]]>
+        </message>
+    </layout>
+
+    <fields name="request">
+        <fieldset
+            name="request">
+            <field
+                name="plugin"
+                type="hidden"
+                default="dspace"/>
+        </fieldset>
+    </fields>
+</metadata>

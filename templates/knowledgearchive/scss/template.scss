@@ -6,6 +6,8 @@
 @import "base/base";
 // buttons, carousels, navigations, thumbnails etc specially for small part of the layout
 @import "components/components";
+// split layouts into different files like header, footer, sidebar when project gets large
+@import "layouts/layouts";
 // theme specific styles...only usefull if there is multiple theme developed
 @import "themes/themes";
 //pages sepecific styles

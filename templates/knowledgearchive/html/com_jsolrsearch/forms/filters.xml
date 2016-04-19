@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset
+        name="facets"
+        addfieldpath="/libraries/JSolr/Form/Fields/Legacy">
+        <field
+            name="author"
+            facet="dc.contributor.author_fc"
+            filter="author"
+            type="jsolr.facets"
+            label="TPL_KNOWLEDGEARCHIVE_COM_JSOLRSEARCH_FILTER_BYAUTHOR"
+            count="true"
+            exactmatch="true"/>
+        <field
+            name="subject"
+            facet="dc.subject_fc"
+            filter="dc.subject_sm"
+            type="jsolr.facets"
+            label="TPL_KNOWLEDGEARCHIVE_COM_JSOLRSEARCH_FILTER_BYSUBJECT"
+            count="true"
+            exactmatch="true"/>
+    </fieldset>
+</form>

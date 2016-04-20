@@ -1,7 +1,7 @@
 (function ($) {
     $(document).ajaxStart(function () {
         //Disable Load more button when data is being fetched
-        $(".jcar-load-more").attr("disabled", "disabled").html("<span class=\"loader-gif\"></span> " + $.translations.LOADING_BUTTON);
+        $(".jcar-load-more").attr("disabled", "disabled").html("<span class=\"loader-gif\"></span> " + $.translations.COM_JCAR_LOADING_BUTTON);
     });
 
     $(document).ajaxStop(function () {
@@ -17,12 +17,18 @@
             e.preventDefault();
 
             $.get(getURL, function (data) {
-                //create tempalte for mustache js
-                var template = $('#jcarListTemplate').html();
-                 //Render tempalte
-                var html = Mustache.to_html(template, data);
-                //Insert data into mustache template
-                $('#jcarListWrapper').append(html);
+                //Set mustache tempalte path
+                var templatePath = './../templates/knowledgearchive/template-html/template.html';
+                //Retrieve the tempalte Data
+                $.get(templatePath, function (templates) {
+                    // filter the tempalte data with correspondent id. 
+                    // tempalte.html can have multiple template defined with unique id for each tempalte                    
+                    var template = $(templates).filter('#jcarListTemplate').html();
+                    //Render template with returned json data from Ajax
+                    var html = Mustache.to_html(template, data);
+                    //Insert data into mustache template
+                    $('#jcarListWrapper').append(html);
+                });
 
                 //udpate Ajax url for next iteration
                 var updatedURL = data.pagination.pagesNext;

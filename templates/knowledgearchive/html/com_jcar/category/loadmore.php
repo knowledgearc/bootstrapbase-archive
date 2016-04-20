@@ -9,15 +9,15 @@
 defined('_JEXEC') or die;
 
 JHtml::_('bootstrap.framework');
-JFactory::getDocument()->addScript(JUri::root().'templates/knowledgearchive/js/jui/mustache.min.js');
-JFactory::getDocument()->addScript(JUri::root().'media/com_jcar/js/jcar.js');
+JHtml::script('jui/mustache.min.js', false, true);
+JHtml::script('jui/jcar.js', false, true);
 
-$COM_JCAR_LOADING_BUTTON = JText::_('COM_JCAR_LOADING_BUTTON');
+$LOADING_BUTTON = JText::_('TPL_KNOWLEDGEARCHIVE_LOADING_BUTTON');
 
 JFactory::getDocument()->addScriptDeclaration(
 <<<JS
 (function ($) {
-$.translations = {'COM_JCAR_LOADING_BUTTON':"{$COM_JCAR_LOADING_BUTTON}"};
+$.translations = {'LOADING_BUTTON':"{$LOADING_BUTTON}"};
 })(jQuery);
 JS
 );
@@ -45,17 +45,17 @@ endif;
                 <?php echo $item->name; ?></a></h2>
 
         <?php endforeach; ?>
-        
+
         <!--Mustache Template Starts-->
         <!--<template id="jcarListTemplate" style="backround:yellow;">
-             {{#items}}  
+             {{#items}}
             <h2><a href="{{link}}">{{name}}</a></h2>
              {{/items}}
         </template>-->
         <!--Mustache Template Ends-->
         <!--Insert Mustache template into html page-->
         <div id="jcarListWrapper"></div>
-         
+
     </articles>
     <footer>
 
@@ -64,7 +64,7 @@ endif;
         <button
             class="jcar-load-more"
             data-url="<?php echo $nextPage; ?>">
-            <?php echo JText::_('COM_JCAR_LOADMORE_BUTTON'); ?>
+            <?php echo JText::_('TPL_KNOWLEDGEARCHIVE_LOADMORE_BUTTON'); ?>
         </button>
         <?php endif; ?>
 

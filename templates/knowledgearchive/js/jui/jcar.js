@@ -1,7 +1,7 @@
 (function ($) {
     $(document).ajaxStart(function () {
         //Disable Load more button when data is being fetched
-        $(".jcar-load-more").attr("disabled", "disabled").html("<span class=\"loader-gif\"></span> " + $.translations.COM_JCAR_LOADING_BUTTON);
+        $(".jcar-load-more").attr("disabled", "disabled").html("<span class=\"loader-gif\"></span> " + $.translations.LOADING_BUTTON);
     });
 
     $(document).ajaxStop(function () {

@@ -32,11 +32,16 @@ endif;
 
 <section id="jcarCategory">
     <header>
+        <?php if ($this->params->get('show_page_heading')) : ?>
+        <h1><?php echo $this->escape($this->params->get('page_heading')); ?></h1>
+        <?php else : ?>
         <h1><?php echo $this->item->name; ?></h1>
+        <?php endif; ?>
+
         <div><?php echo $this->item->description; ?></div>
     </header>
 
-    <articles id="jcar-lists">
+    <div id="jcar-lists">
 
         <?php foreach ($this->item->items as $item) : ?>
 
@@ -56,7 +61,8 @@ endif;
         <!--Insert Mustache template into html page-->
         <div id="jcarListWrapper"></div>
 
-    </articles>
+    </div>
+
     <footer>
 
         <?php if ($nextPage) : ?>

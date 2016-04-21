@@ -11,9 +11,17 @@ body > footer {
 aside {
     &#sidebar1,
     &#sidebar2 {
-        background: #F5F5F5;
+        background: transparent;
+        
 
         @extend .col-md-3;
+        @extend row;
+        
+        &>ul {
+            background: #F5F5F5;
+            padding: 0 10px;
+            margin-bottom: 20px; 
+        }
 
         .nav > li > a {
             padding: 10px 0;

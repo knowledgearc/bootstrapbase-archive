@@ -25,6 +25,20 @@ aside {
             
         }
     }
+    @media (max-width: $screen-sm-max) {
+        .moduletable {
+            padding: 10px 0 0;
+        }
+               
+         .moduletable > h3, .moduletable > .h3 {
+                margin-left: -15px;
+                margin-right: -15px;
+                margin-top: 20px;
+        }       
+        
+   
+    }
+    
 }
 main {
     &.no-sidebars {
@@ -38,4 +52,14 @@ main {
     &.left-sidebar {
         @extend .col-md-9;
     }
+    
+    @media (max-width: $screen-sm-max) {  
+        .breadcrumb {
+            margin-left: -15px;
+            margin-right: -15px;
+            margin-top: 20px;
+        }
+   
+    }
+    
 }

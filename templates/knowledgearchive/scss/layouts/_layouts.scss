@@ -15,12 +15,19 @@ body > footer {
 
 aside {
     &.sidebar {
-       @extend .row;
+       //@extend .row;
         @extend .col-md-3;
-        @media (min-width: $screen-sm-max) {
+        // @media (min-width: $screen-sm-max) {
+        //     padding-right: 50px;
+        // }
+        padding-top: 20px;      
+    }
+    
+    &#sidebar1.sidebar {
+        @extend .row;
+         @media (min-width: $screen-sm-max) {
             padding-right: 50px;
         }
-        padding-top: 20px;      
     }
     
     &#sidebar1,

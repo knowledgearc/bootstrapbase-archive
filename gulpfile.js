@@ -86,8 +86,12 @@ gulp.task('copy-html', ['clean:js'], function () {
         }).pipe(gulp.dest('D:/projects/htdocs/projects/oda_html/templates'));
     });
 
+//gulp.task('copy', ['clean:scss', 'clean:js', 'clean:html'], function () {
+//
+//});
+
 gulp.task('watch', function(){
 	gulp.watch('templates/knowledgearchive/**/*', ['copy-scss', 'copy-js', 'copy-html']);
 });
-gulp.task('default', ['copy']);
+gulp.task('default', ['watch']);
 

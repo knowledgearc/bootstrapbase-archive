@@ -1,1 +1,15 @@
+//color-pallete
+$black : #000;
+$white : #fff;
+$dark-blue : #364149;
+$x-dark-blue : darken($dark-blue, 5% );
+$light-blue : lighten($dark-blue, 40% );
+$x-light-blue : lighten($dark-blue, 60% );
+
+
+$navbar-bg : $dark-blue;
+$navbar-link: $light-blue;
+$navbar-link-hover: $x-light-blue;
+$navbar-active-link: $x-dark-blue;
+$navbar-toggle-button: $navbar-link; 
 $icon-font-path: "../fonts/";

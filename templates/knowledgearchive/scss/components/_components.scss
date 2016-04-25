@@ -1,12 +1,12 @@
 @import 'modules';
 .navbar {
     border-radius: 0;
-    background: #364149;
+    background: $navbar-bg;
 
     .nav > li > a {
-        color: #8ba2b3;
+        color: $navbar-link;
         &:hover, &:focus {
-            color: #d1e1ec;
+            color: $navbar-link-hover;
             background: transparent;
         }
         
@@ -17,8 +17,8 @@
     }
     
     .nav > li.current.active > a {
-        color: #d1e1ec;
-        background: #2a343c;
+        color: $navbar-link-hover;
+        background: $navbar-active-link;
     }
 }
 
@@ -26,7 +26,7 @@
     border-radius: 0;
     .icon-bar {
         border-radius: 0;
-        background: #84929c;
+        background: $navbar-toggle-button;
     }
 }
 

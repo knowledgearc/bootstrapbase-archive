@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "del": "^2.2.0",
+    "devbridge-styleguide": "^0.4.6",
     "gulp": "^3.9.1",
     "gulp-rm": "^1.0.0"
   }

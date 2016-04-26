@@ -1,11 +1,12 @@
 //color-pallete
+//-- color:start --//
 $black : #000;
 $white : #fff;
 $dark-blue : #364149;
 $x-dark-blue : darken($dark-blue, 5% );
 $light-blue : lighten($dark-blue, 40% );
 $x-light-blue : lighten($dark-blue, 60% );
-
+//-- color:end --//
 
 $navbar-bg : $dark-blue;
 $navbar-link: $light-blue;

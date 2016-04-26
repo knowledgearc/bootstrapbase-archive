@@ -1,6 +1,12 @@
 var gulp = require('gulp');
 var del = require('del');
-var rm = require( 'gulp-rm' )
+var rm = require( 'gulp-rm' );
+
+var styleguide = require('devbridge-styleguide');
+
+gulp.task('start-styleguide', function () {
+  styleguide.startServer();
+});
 
 // Settings for Jcar Project
 // gulp.task('clean:templates', function () {

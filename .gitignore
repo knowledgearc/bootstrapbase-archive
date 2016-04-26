@@ -10,3 +10,4 @@ vendor
 node_modules
 styleguide
 build
+gulpfile.js

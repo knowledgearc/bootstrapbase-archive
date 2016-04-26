@@ -68,6 +68,17 @@ gulp.task('clean:html', function () {
 	  });
 });
 
+gulp.task('clean:phpfiles', function () {
+  return del([
+  // clean everything old files inside templates before copying new changed files
+    'D:/projects/htdocs/projects/oda_html/templates/knowledgearchive/index.php', 
+	'D:/projects/htdocs/projects/oda_html/templates/knowledgearchive/initialize.php'
+      ],
+	  {
+		  force: true
+	  });
+});
+
 // gulp.task( 'clean:templates', function() {
   // return gulp.src( 'D:/projects/htdocs/projects/jcar/templates/knowledgearchive/**/*', { read: false })
     // .pipe( rm() )
@@ -86,8 +97,14 @@ gulp.task('copy-js', ['clean:js'], function () {
         }).pipe(gulp.dest('D:/projects/htdocs/projects/oda_html/templates'));
     });
 	
-gulp.task('copy-html', ['clean:js'], function () {
+gulp.task('copy-html', ['clean:html'], function () {
         return gulp.src(['templates/knowledgearchive/html/**/*'], {
+            base: 'templates'
+        }).pipe(gulp.dest('D:/projects/htdocs/projects/oda_html/templates'));
+    });
+
+gulp.task('copy-phpfiles', ['clean:phpfiles'], function () {
+        return gulp.src(['templates/knowledgearchive/index.php', 'templates/knowledgearchive/initialize.php'], {
             base: 'templates'
         }).pipe(gulp.dest('D:/projects/htdocs/projects/oda_html/templates'));
     });
@@ -97,7 +114,12 @@ gulp.task('copy-html', ['clean:js'], function () {
 //});
 
 gulp.task('watch', function(){
-	gulp.watch('templates/knowledgearchive/**/*', ['copy-scss', 'copy-js', 'copy-html']);
+	gulp.watch('templates/knowledgearchive/**/*', ['copy-scss', 'copy-js', 'copy-html', 'copy-phpfiles']);
 });
-gulp.task('default', ['watch']);
+
+gulp.task('dev', function(){
+	gulp.watch('templates/knowledgearchive/**/*', ['copy-scss', 'copy-js']);
+});
+
+gulp.task('default', ['copy-scss', 'copy-js', 'copy-html', 'copy-phpfiles']);
 

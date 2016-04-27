@@ -39,6 +39,14 @@ aside {
     &#sidebar1,
     &#sidebar2 {
         background: transparent;
+        // a {
+        //     color: #333333;
+        //     &:hover {
+        //         text-decoration: none;
+        //         background: #f2f2f2;
+        //     }
+        // }
+        
        // @extend .row;
 
        
@@ -57,15 +65,20 @@ aside {
             
             h3 {
                 margin-top: 0;
+                font-size: $font-size-base + 1;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding-left: 9px;
             }
         }
 
         .nav > li > a {
-            padding: 4px 0;
+            padding: 4px 9px 4px;
+            color: #333333;
             &:hover,
             &:focus {
-                background: transparent;
-                text-decoration: underline;  
+                background: #DADADA;
+                text-decoration: none;  
             }
             
         }
@@ -121,6 +134,14 @@ main {
        // @extend .row;
         @extend .col-md-12;
         margin-bottom: 20px;
+        
+        > header {
+            > h2 {
+                font-size: $font-size-base;
+               // text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
     }
     
     @media (max-width: $screen-sm-max) {  

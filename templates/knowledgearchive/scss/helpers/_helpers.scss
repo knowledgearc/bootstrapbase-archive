@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 //color-pallete
 //-- color:start --//
 $black : #000;
@@ -7,6 +8,10 @@ $x-dark-blue : darken($dark-blue, 5% );
 $light-blue : lighten($dark-blue, 40% );
 $x-light-blue : lighten($dark-blue, 60% );
 //-- color:end --//
+
+
+$font-family-sans-serif:  "Open Sans", Arial, sans-serif;
+$font-size-base:          12px;
 
 $navbar-bg : $dark-blue;
 $navbar-link: $light-blue;

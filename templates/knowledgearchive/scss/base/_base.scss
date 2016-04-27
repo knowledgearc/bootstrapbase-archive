@@ -1,19 +1,21 @@
 @import "normalize";
 
-h1, h2 {
+h1, h2, .h1, .h2 {
     font-size: 24px;
+    font-weight: 700;
 }
 
-h3 {
-    font-size:18px;
+h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+    font-size:12px;
+    font-weight: 700;
 }
 
 
 
 #jcarCategory {
     h2 {
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 12px;
+        font-weight: 700;
         
         a {
             color: #364149;
@@ -28,7 +30,7 @@ h3 {
     & > header{
         background: #B7C2CA;
         padding: 1px 15px 17px;
-        font-style: italic
+       // font-style: italic
     }
 }
 

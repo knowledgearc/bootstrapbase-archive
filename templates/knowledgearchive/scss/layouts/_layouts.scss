@@ -103,6 +103,9 @@ aside {
 main {
     @extend .row;
     margin-bottom:20px;
+    
+    
+    
     &.no-sidebars {
         //@extend .row;
         @extend .col-md-12;
@@ -131,6 +134,13 @@ main {
     }
     
     article {
+         a {
+                color: #333333;
+                &:hover {
+                    color: #545454;
+                }
+            }
+        
        // @extend .row;
         @extend .col-md-12;
         margin-bottom: 20px;
@@ -141,6 +151,8 @@ main {
                // text-transform: uppercase;
                 font-weight: 700;
             }
+            
+           
         }
     }
     

@@ -7,11 +7,17 @@ $dark-blue : #364149;
 $x-dark-blue : darken($dark-blue, 5% );
 $light-blue : lighten($dark-blue, 40% );
 $x-light-blue : lighten($dark-blue, 60% );
+
+$cyan : #39beea;
 //-- color:end --//
 
 
 $font-family-sans-serif:  "Open Sans", Arial, sans-serif;
 $font-size-base:          12px;
+
+$link-color:            $cyan;
+$link-hover-color:            $cyan;
+
 
 $navbar-bg : $dark-blue;
 $navbar-link: $light-blue;

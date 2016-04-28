@@ -41,4 +41,34 @@ button {
     }
 }
 
+#jsolrSearch, #jsolrSearchResults {
+     form {
 
+        fieldset.query {
+            margin-bottom: 12px;
+        }
+    
+    input#q {
+        @media (min-width: $screen-sm-max) {
+            width: 30%;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+    }
+
+         button {
+            &.button {
+                @extend .btn;
+                @extend .btn-sm;
+                @extend .btn-primary;
+                border-radius: 0;
+                padding: 4px 10px;
+                font-size: 11px;
+                line-height: 1.2;
+                //border-radius: 0;
+                vertical-align: bottom;
+                margin-top: 3px;
+            }
+        }
+    }
+}

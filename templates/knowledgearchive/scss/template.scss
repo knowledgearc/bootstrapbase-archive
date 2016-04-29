@@ -14,5 +14,11 @@
 @import "pages/pages";
 //overrides to the predefined styles..use this file to override the vendores aswell or a specific override file can be created inside the vendor folder to modify vendor styles
 @import "overrides/overrides";
+
+$partial : "_custom.scss";
+@if import-exists($partial) {
+  @import $partial;
+}
+
 //debug for css
 //@import "debug";

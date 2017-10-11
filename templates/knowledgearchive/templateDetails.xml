@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.5" type="template" client="site" method="upgrade">
-    <name>knowledgearchive</name>
-    <creationDate>2016-04-12</creationDate>
+    <name>knowledgearc</name>
+    <creationDate>2016-10-11</creationDate>
     <author>KnowledgeArc</author>
     <authorEmail>development@knowledgearc.com</authorEmail>
     <authorUrl>http://www.knowledgearc.com</authorUrl>
-    <copyright>Copyright (C) 2013-2016 KnowledgeArc Ltd. All rights reserved.</copyright>
+    <copyright>Copyright (C) 2013-2017 KnowledgeArc Ltd. All rights reserved.</copyright>
     <license>GNU/GPL</license>
     <version>1.0.0</version>
-    <description>TPL_KNOWLEDGEARCHIVE_XML_DESCRIPTION</description>
+    <description>TPL_KNOWLEDGEARC_XML_DESCRIPTION</description>
     <files>
         <folder>css</folder>
         <folder>fonts</folder>
@@ -29,8 +29,8 @@
     </files>
 
     <languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.tpl_knowledgearchive.ini</language>
-        <language tag="en-GB">en-GB/en-GB.tpl_knowledgearchive.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_knowledgearc.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_knowledgearc.sys.ini</language>
     </languages>
 
     <positions>
@@ -51,10 +51,10 @@
 
     <config>
         <fields name="params">
-            <fieldset name="styles" label="TPL_KNOWLEDGEARCHIVE_FIELDSET_STYLES">
+            <fieldset name="styles" label="TPL_KNOWLEDGEARC_FIELDSET_STYLES">
                 <field name="logo" class="" type="media" default=""
-                    label="TPL_KNOWLEDGEARCHIVE_LOGO_LABEL"
-                    description="TPL_KNOWLEDGEARCHIVE_LOGO_DESC" />
+                    label="TPL_KNOWLEDGEARC_LOGO_LABEL"
+                    description="TPL_KNOWLEDGEARC_LOGO_DESC" />
             </fieldset>
         </fields>
     </config>

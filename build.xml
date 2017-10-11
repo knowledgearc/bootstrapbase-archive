@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project name="Template - KnowledgeArchive" default="">
+<project name="Template Build" default="">
     <property file="build.properties"/>
     <property name="path.build" value="${src}/build"/>
+    <property name="path.languages" value="${path.joomla}/language"/>
 
     <target name="deploy" description="Deploy template code to a pre-existing Joomla site.">
-        <delete dir="${path.joomla}/templates/knowledgearchive/" includeemptydirs="true" failonerror="true"/>
+        <delete dir="${path.joomla}/templates/knowledgearc" includeemptydirs="true" failonerror="true"/>
 
-        <copy todir="${path.joomla}/templates/knowledgearchive">
-            <fileset dir="${src}/templates/knowledgearchive" defaultexcludes="false">
+        <copy todir="${path.joomla}/templates/knowledgearc">
+            <fileset dir="${src}/templates/knowledgearc" defaultexcludes="false">
                 <exclude name="language"/>
             </fileset>
         </copy>
 
         <copy todir="${path.joomla}">
-            <fileset dir="${src}/templates/knowledgearchive" defaultexcludes="true">
+            <fileset dir="${src}/templates/knowledgearc" defaultexcludes="true">
                 <include name="language/**"/>
-            </fileset>
-        </copy>
-
-        <phingcall target="prepare_less_parser"/>
-
-        <copy todir="${path.joomla}/templates/knowledgearchive/libraries/">
-            <fileset dir="${path.build}/libraries" defaultexcludes="true">
-                <include name="vendor/**"/>
             </fileset>
         </copy>
     </target>
@@ -34,10 +27,8 @@
     <target name="package" description="Create an installable package." depends="clean">
         <mkdir dir="${path.build}"/>
 
-        <phingcall target="prepare_less_parser"/>
-
         <copy todir="${path.build}" overwrite="true">
-            <fileset dir="./templates/knowledgearchive" defaultexcludes="false">
+            <fileset dir="./templates/knowledgearc" defaultexcludes="false">
                 <exclude name="build/**"/>
                 <exclude name="build*.xml"/>
                 <exclude name="build.properties*"/>
@@ -46,32 +37,11 @@
 
         <foreach list="${overrides.exclude}" param="exclude" target="remove_override"/>
 
-        <zip destfile="${path.build}/tpl_knowledgearchive.zip" basedir="${path.build}"/>
+        <zip destfile="${path.build}/tpl_knowledgearc.zip" basedir="${path.build}"/>
 
         <delete includeemptydirs="true">
-            <fileset dir="${path.build}" includes="**/*">
+            <fileset dir="${path.build}" includes="**/**">
                 <exclude name="*.zip"/>
-            </fileset>
-        </delete>
-    </target>
-
-    <target name="prepare_less_parser" hidden="true">
-        <mkdir dir="${path.build}/libraries"/>
-        <copy file="${src}/composer.json" todir="${path.build}/libraries"/>
-
-        <composer command="install" composer="${composer.phar}">
-            <arg value="--optimize-autoloader"/>
-            <arg value="--working-dir"/>
-            <arg path="${path.build}/libraries"/>
-        </composer>
-
-        <!-- We use Joomla's autoloader so we remove composer's autoload funcitonality. -->
-        <delete includeemptydirs="true">
-            <fileset dir="${path.build}/libraries/vendor" defaultexcludes="false">
-                <include name="**/**"/>
-                <include name="oyejorge/less.php/lib/Less/.easymin/**"/>
-                <exclude name="oyejorge/less.php/lib/Less/**/*.php"/>
-                <exclude name="leafo/**/*.php"/>
             </fileset>
         </delete>
     </target>

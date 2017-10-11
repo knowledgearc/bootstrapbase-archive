@@ -8,7 +8,7 @@
             facet="dc.contributor.author_fc"
             filter="author"
             type="jsolr.facets"
-            label="TPL_KNOWLEDGEARCHIVE_COM_JSOLRSEARCH_FILTER_BYAUTHOR"
+            label="TPL_KNOWLEDGEARC_COM_JSOLRSEARCH_FILTER_BYAUTHOR"
             count="true"
             exactmatch="true"/>
         <field
@@ -16,7 +16,7 @@
             facet="dc.subject_fc"
             filter="dc.subject_sm"
             type="jsolr.facets"
-            label="TPL_KNOWLEDGEARCHIVE_COM_JSOLRSEARCH_FILTER_BYSUBJECT"
+            label="TPL_KNOWLEDGEARC_COM_JSOLRSEARCH_FILTER_BYSUBJECT"
             count="true"
             exactmatch="true"/>
     </fieldset>

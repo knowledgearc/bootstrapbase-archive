@@ -12,7 +12,7 @@ JHtml::_('bootstrap.framework');
 JHtml::script('jui/mustache.min.js', false, true);
 JHtml::script('jui/jcar.js', false, true);
 
-$LOADING_BUTTON = JText::_('TPL_KNOWLEDGEARCHIVE_LOADING_BUTTON');
+$LOADING_BUTTON = JText::_('TPL_KNOWLEDGEARC_LOADING_BUTTON');
 
 JFactory::getDocument()->addScriptDeclaration(
 <<<JS
@@ -70,7 +70,7 @@ endif;
         <button
             class="jcar-load-more"
             data-url="<?php echo $nextPage; ?>">
-            <?php echo JText::_('TPL_KNOWLEDGEARCHIVE_LOADMORE_BUTTON'); ?>
+            <?php echo JText::_('TPL_KNOWLEDGEARC_LOADMORE_BUTTON'); ?>
         </button>
         <?php endif; ?>
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
     <layout
-        title="TPL_KNOWLEDGEARCHIVE_CATEGORY_VIEW_LOADMORE_TITLE"
-        option="TPL_KNOWLEDGEARCHIVE_CATEGORY_VIEW_LOADMORE_OPTION">
+        title="TPL_KNOWLEDGEARC_CATEGORY_VIEW_LOADMORE_TITLE"
+        option="TPL_KNOWLEDGEARC_CATEGORY_VIEW_LOADMORE_OPTION">
         <message>
-            <![CDATA[TPL_KNOWLEDGEARCHIVE_CATEGORY_VIEW_LOADMORE_DESC]]>
+            <![CDATA[TPL_KNOWLEDGEARC_CATEGORY_VIEW_LOADMORE_DESC]]>
         </message>
     </layout>
 

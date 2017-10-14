@@ -26,10 +26,6 @@ Run phing help for all available targets.
 
 - Extract dist/js/bootstrap*.js to templates/bootstrap/js/jui
 
-- Extract less/* to templates/knowledgearchive/less/bootstrap
-
-For Sass:
-
 - Download latest Sass tar archive from from http://getbootstrap.com/getting-started/,
 
 - Extract /bootstrap-sass-3.3.6/assets/stylesheets/ to templates/knowledgearchive/scss

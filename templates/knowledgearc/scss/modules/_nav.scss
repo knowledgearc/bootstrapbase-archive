@@ -1,0 +1,53 @@
+header {
+	border-top: $nav-border-top;;
+	.navbar {
+		min-height: $nav-min-height;
+		padding-top: $logo-top-padding;
+		@media (max-width: $screen-xs-max) {
+			min-height: 80px;
+		}
+	}
+
+	.navbar-default {
+
+	.navbar-brand {
+		  @include setLogo("logo.svg");
+
+		color: #ffffff;
+		&:hover {
+			color: #ffffff;
+		}
+
+		img {
+			display: none;
+		}
+	}
+
+	.no-svg .navbar-brand {
+		  @include setLogo("logo.png");
+
+		color: #ffffff;
+		&:hover {
+			color: #ffffff;
+		}
+
+		img {
+			display: none;
+		}
+	}
+	.navbar-nav > li > a {
+		color: #ffffff;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
+}
+
+.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+

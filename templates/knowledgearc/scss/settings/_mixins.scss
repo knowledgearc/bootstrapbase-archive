@@ -1,0 +1,3 @@
+@mixin fontFamily ($family: Verdana + "," + Geneva + "," + sans-serif) {
+	font-family: $family;
+}

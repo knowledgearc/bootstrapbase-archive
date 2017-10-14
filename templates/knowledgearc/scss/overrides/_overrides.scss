@@ -1,14 +1,6 @@
-.navbar-collapse {
-    padding-left: 0;
+.list-inline {
+    > li {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 }
-
-i.home-icon {
-    @extend .glyphicon;
-    @extend .glyphicon-home;
-    color: #777777;
-    &:hover {
-        color: #313131;
-    } 
-}
-
-

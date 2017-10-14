@@ -1,0 +1,80 @@
+#sidebar {
+	font-size: 12px;
+	@media ($md-min) {
+		//float: left;
+	}
+	// @media ($sm-max){
+	// 	margin-left: 15px;
+	// 	padding-top:20px;
+	// 	//clear: both;
+	// 	margin-right: 15px;
+	// }
+	background-color: $sidebar-bg ;
+
+	&.col-md-3 {
+		padding: 10px 20px;
+
+		@media ($sm-max){
+		padding: 20px;
+		float: none;
+		clear: both;
+		margin:0 auto;
+		width:95%;
+	}
+
+	}
+
+	.list-group-item {
+		background-color: transparent;
+		border:none;
+		border-bottom: 1px solid #ffffff;
+		padding: 9px 0 1px 0;
+		line-height: 14px;
+		color: $sidebar-link ;
+
+		//border-color: #ffffff;
+		&:last-child {
+			border-radius: 0;
+		}
+		&:hover {
+			border-color: $sidebar-link-active ;
+		}
+		&.active {
+			color: $sidebar-link-active ;
+			//font-family: $verdana;
+			//font-weight: bold;
+			.h5 {
+				//font-family: $verdana;
+				@include fontFamily ($font-verdana);
+				font-weight: bold;
+			}
+		}
+	}
+	fieldset {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+	.form-control, .btn {
+		border-radius: 0;
+	}
+	.btn-primary {
+		background: $blue;
+		border-color: $blue;
+	}
+	h2 {
+	&.h6{
+		@include fontFamily ($font-verdana);
+		font-size: 15px;
+		color: $sidebar-heading-color;
+		margin-bottom: 0;
+    margin-top: 14px;
+    padding-bottom: 0;
+	}
+	.h5.list-group-item-heading.h5 {
+		@include fontFamily ($font-verdana);
+		font-size: 15px;
+		color: $sidebar-heading-color;
+	}
+}
+}

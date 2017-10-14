@@ -1,74 +1,40 @@
-@import 'modules';
-.navbar {
-    border-radius: 0;
-    background: $navbar-bg;
-
-    .nav > li > a {
-        color: $navbar-link;
-        &:hover, &:focus {
-            color: $navbar-link-hover;
-            background: transparent;
-        }
-        
-        @media (max-width: $screen-sm-max) {
-            padding-left: 25px;
-        }
-        
-    }
-    
-    .nav > li.current.active > a {
-        color: $navbar-link-hover;
-        background: $navbar-active-link;
-    }
+fieldset {
+	border:none;
+}
+.breadcrumb {
+	font-size: 10px;
 }
 
-.navbar-toggle {
-    border-radius: 0;
-    .icon-bar {
-        border-radius: 0;
-        background: $navbar-toggle-button;
-    }
+.breadcrumb > li + li:before
+{
+    padding: 0 2px;
+    content: '/';
+    color: $breadcrumb-text-color ;
 }
 
-button {
-    &.jcar-load-more {
-        border-radius: 0;
-
-        @extend .btn;
-        @extend .btn-primary;
-        display: inline-block;
-        margin-bottom: 35px;
-    }
+.page-header {
+	margin: 0;
+	padding-top:30px;
+	@include fontFamily ($georgia);
+	font-size: 22px;
+	color: $title-color;
+	border-bottom:3px solid $page-header-border-color;
 }
 
-#jsolrSearch, #jsolrSearchResults {
-     form {
+fieldset#aspect_eperson_PasswordLogin_list_password-login, div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-title ,
+div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-dateissued, div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-author
+  {
+    margin-top: 12px;
+}
+h4.artifact-title {
+    margin-top: 18px;
+    margin-bottom: 3px;
+}
 
-        fieldset.query {
-            margin-bottom: 12px;
-        }
-    
-    input#q {
-        @media (min-width: $screen-sm-max) {
-            width: 30%;
-            padding-left: 2px;
-            padding-right: 2px;
-        }
-    }
-
-         button {
-            &.button {
-                @extend .btn;
-                @extend .btn-sm;
-                @extend .btn-primary;
-                border-radius: 0;
-                padding: 4px 10px;
-                font-size: 11px;
-                line-height: 1.2;
-                //border-radius: 0;
-                vertical-align: bottom;
-                margin-top: 3px;
-            }
-        }
-    }
+form#aspect_discovery_SimpleSearch_div_main-form {
+    display: none;
+    margin: 0;
+}
+.ds-static-div p.toggler-wrap {
+    display: none;
 }

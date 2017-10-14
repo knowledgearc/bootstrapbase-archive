@@ -1,0 +1,17 @@
+#content {
+    
+
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-lg;
+    }
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-column-gap: 15px;
+    margin: 0 auto;
+}

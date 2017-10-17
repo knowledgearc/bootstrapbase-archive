@@ -1,31 +1,33 @@
 fieldset {
-	border:none;
-}
-.breadcrumb {
-	font-size: 10px;
+    border: none;
 }
 
-.breadcrumb > li + li:before
-{
+.breadcrumb {
+    font-size: 10px;
+}
+
+.breadcrumb>li+li:before {
     padding: 0 2px;
     content: '/';
-    color: $breadcrumb-text-color ;
+    color: $breadcrumb-text-color;
 }
 
 .page-header {
-	margin: 0;
-	padding-top:30px;
-	@include fontFamily ($georgia);
-	font-size: 22px;
-	color: $title-color;
-	border-bottom:3px solid $page-header-border-color;
+    margin: 0;
+    padding-top: 30px;
+    @include fontFamily ($georgia);
+    font-size: 22px;
+    color: $title-color;
+    border-bottom: 3px solid $page-header-border-color;
 }
 
-fieldset#aspect_eperson_PasswordLogin_list_password-login, div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-title ,
-div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-dateissued, div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-author
-  {
+fieldset#aspect_eperson_PasswordLogin_list_password-login,
+div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-title,
+div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-dateissued,
+div#aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-author {
     margin-top: 12px;
 }
+
 h4.artifact-title {
     margin-top: 18px;
     margin-bottom: 3px;
@@ -35,6 +37,7 @@ form#aspect_discovery_SimpleSearch_div_main-form {
     display: none;
     margin: 0;
 }
+
 .ds-static-div p.toggler-wrap {
     display: none;
 }

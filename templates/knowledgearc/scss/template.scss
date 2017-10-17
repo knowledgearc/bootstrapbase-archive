@@ -4,7 +4,6 @@
 @import "vendors/vendors";
 // base files like typograhy, headings, links, resets etc
 @import "base/base";
-
 @import "layout/layout";
 // modules like different block level layout of the page. eg: nav, header, table, tab
 @import "modules/modules";
@@ -12,4 +11,3 @@
 @import "components/components";
 //overrides to the predefined styles..use this file to override the vendores aswell or a specific override file can be created inside the vendor folder to modify vendor styles
 @import "overrides/overrides";
-

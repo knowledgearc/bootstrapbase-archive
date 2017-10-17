@@ -1,17 +1,17 @@
 .trail-wrapper {
-	.container {
+   .container {
 		padding-left: 0;
 	}
 }
+
 .main-content {
-	@media ($md-min) {
-		float: right;
+   @media ($md-min) {
+       float: right;
 	}
-	
 }
 
 .breadcrumb {
-	@media (max-width: $screen-xs-max) {
-			margin-left: 15px;
-		}
+    @media (max-width: $screen-xs-max) {
+        margin-left: 15px;
+	}
 }

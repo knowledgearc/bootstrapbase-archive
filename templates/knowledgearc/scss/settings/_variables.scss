@@ -3,45 +3,36 @@
 @import "compass-imagehelper";
 //color-pallete
 //-- color:start --//
-
-$blue                       : #0077BB; //navbar top border
-$dark-blue                  : #0C365C; //navbar, footer
-$light-white                : #D4EBF9; //article box bg
-$cyan                       : #39beea;
-
-
-
-$primary-color              : $blue;
-$secondary-color            : $dark-blue;
+$blue: #0077BB; //navbar top border
+$dark-blue: #0C365C; //navbar, footer
+$light-white: #D4EBF9; //article box bg
+$cyan: #39beea;
+$primary-color: $blue;
+$secondary-color: $dark-blue;
 //$body-background          : #ececec;
-$body-font-color            : #333;
-$navbar-background          : $dark-blue;
-$navbar-link                : $primary-color;
-$navbar-link-hover          : lighten($navbar-background, 60%);
-$title-color                : #002a50; //body font color
-
-
-$sidebar-bg                 : #e0e5e9; //sidebar-
+$body-font-color: #333;
+$navbar-background: $dark-blue;
+$navbar-link: $primary-color;
+$navbar-link-hover: lighten($navbar-background, 60%);
+$title-color: #002a50; //body font color
+$sidebar-bg: #e0e5e9; //sidebar-
 //$body-background          : #ececec;
-$body-font-color            : #444444;
-$navbar-link                : #e6e6e6;
-$navbar-background          : $dark-blue;
-$title-color                : #002a50; //body font color
-$sidebar-heading-color      : #85919b;
-$sidebar-link               : $primary-color;
-$sidebar-link-active        : #003D7F;
-$sidebar_link-border        : #ffffff;
-$sidebar-link-hover-border  : #003d75;
-$breadcrumb-text-color      : #94A2AD;
-$link-color                 : $primary-color;
-$footer-link1               : #BEC1C8;
-$footer-link2               : #ffffff;
-$copyright-bg               : #303437;
-$copyright-color            : #95999C;
-$page-header-border-color   : #F4F5F8;
-
+$body-font-color: #444444;
+$navbar-link: #e6e6e6;
+$navbar-background: $dark-blue;
+$title-color: #002a50; //body font color
+$sidebar-heading-color: #85919b;
+$sidebar-link: $primary-color;
+$sidebar-link-active: #003D7F;
+$sidebar_link-border: #ffffff;
+$sidebar-link-hover-border: #003d75;
+$breadcrumb-text-color: #94A2AD;
+$link-color: $primary-color;
+$footer-link1: #BEC1C8;
+$footer-link2: #ffffff;
+$copyright-bg: #303437;
+$copyright-color: #95999C;
+$page-header-border-color: #F4F5F8;
 $nav-min-height: 100px;
-
 $nav-border-top: 16px solid $blue;
-
 $logo-top-padding: 20px;
